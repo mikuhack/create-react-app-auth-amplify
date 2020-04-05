@@ -21,6 +21,7 @@ export const listTodos = /* GraphQL */ `
         id
         name
         description
+        createdAt
       }
       nextToken
     }
