@@ -4,5 +4,23 @@
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation"
 		}
+	},
+	"api": {
+		"topichaSigma": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "API_KEY",
+						"apiKeyConfig": {
+							"description": "topicha for Sigma-Crest",
+							"apiKeyExpirationDays": "365"
+						}
+					}
+				}
+			}
+		}
 	}
 }
