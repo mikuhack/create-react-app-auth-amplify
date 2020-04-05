@@ -37,7 +37,7 @@ function MessageInput() {
 
   return (
     <div className="message-input">
-      <h1>
+      <h1 className="topic">
         <Badge variant="success">今日のトピック</Badge>
         <br />
         皆さんの新人時代の面白エピソード・失敗談・タメになる話・思い出話・その他そんな感じの話
@@ -74,7 +74,7 @@ function MessageInput() {
             新型コロナウイルスに打ち勝て人類！
           </Form.Text>
         </Form.Group>
-        <Button onClick={createNewMessage} variant="success">
+        <Button onClick={createNewMessage} variant="primary">
           send
         </Button>
       </Form>
