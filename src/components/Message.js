@@ -4,6 +4,12 @@ import "../styles/Message.css";
 import { Card } from "react-bootstrap";
 
 function Message(props) {
+  const lines = props.message.split("\n").map((line, index) =>
+    (
+      <span key={index}>
+        {line}<br />
+      </span>
+    ));
   return (
     <>
       <Card>
@@ -12,7 +18,7 @@ function Message(props) {
             {props.icon}
             {props.name}
           </Card.Title>
-          <Card.Text className="message">{props.message}</Card.Text>
+          <Card.Text className="message">{lines}</Card.Text>
         </Card.Body>
       </Card>
     </>
