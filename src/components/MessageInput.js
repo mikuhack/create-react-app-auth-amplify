@@ -40,7 +40,7 @@ function MessageInput() {
       <h1 className="topic">
         <Badge variant="success">今日のトピック</Badge>
         <br />
-        プログラミング初心者だった頃、どんな瞬間に楽しさ・苦しさ・達成感等を感じた？
+        YOUは何しにIT業界へ？――あるいはあなたが今の仕事をするに至った経緯について
       </h1>
       <Form>
         {/* <Form.Group controlId="formName">
