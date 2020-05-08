@@ -40,7 +40,7 @@ function MessageInput() {
       <h1 className="topic">
         <Badge variant="success">今日のトピック</Badge>
         <br />
-        あったらいいな、こんな社内サービス / アプリケーション
+        GW with コロナ、何して過ごした？
       </h1>
       <Form>
         {/* <Form.Group controlId="formName">
