@@ -8,14 +8,12 @@ function SideInfo() {
     <div className="side-info">
       <Container fluid={true}>
         <Row>
-          <Col>
-            {/* <QRCode /> */}
-          </Col>
+          <Col>{/* <QRCode /> */}</Col>
         </Row>
         <Row>
           <Col>
             <div className="info-head">Join at</div>
-            <div className="info-body">iguigu-hacking.com</div>
+            <div className="info-body">xxx-hacking.com</div>
           </Col>
         </Row>
       </Container>

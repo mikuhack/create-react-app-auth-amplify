@@ -7,9 +7,6 @@ import Badge from "react-bootstrap/Badge";
 import "../styles/MessageInput.css";
 
 function MessageInput() {
-  const iconRef = useRef();
-
-  const nameRef = useRef();
   const messageRef = useRef();
 
   async function createNewMessage() {
@@ -18,16 +15,11 @@ function MessageInput() {
       .then((user) => {
         console.log(user);
         userName = user.username;
-        // this.setState({ authState: "signedIn" });
       })
       .catch((e) => {
         console.log(e);
-        // this.setState({ authState: "signIn" });
       });
     const message = {
-      // icon: iconRef.current.value,
-      // name: nameRef.current.value,
-      // message: messageRef.current.value
       name: userName,
       description: messageRef.current.value,
     };
@@ -43,26 +35,6 @@ function MessageInput() {
         自由に話そう！それと、本サービスや取り組み自体への感想など頂けたらうれしいです😊
       </h1>
       <Form>
-        {/* <Form.Group controlId="formName">
-          <select size="1" ref={iconRef}>
-            <option>🐬</option>
-            <option>🦈</option>
-            <option>🐠</option>
-            <option>🐕</option>
-            <option>🐩</option>
-            <option>🐈</option>
-            <option>🐅</option>
-            <option>🐒</option>
-            <option>🐧</option>
-            <option>🐤</option>
-            <option>🦌</option>
-            <option>🍜</option>
-          </select>
-          <Form.Control type="text" placeholder="your name" ref={nameRef} />
-          <Form.Text className="text-muted">
-            ACCA Jusan-ku Kansatsu-ka ha kami anime.
-          </Form.Text>
-        </Form.Group> */}
         <Form.Group controlId="formContent">
           <Form.Control
             as="textarea"

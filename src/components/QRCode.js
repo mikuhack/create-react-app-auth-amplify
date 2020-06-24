@@ -45,6 +45,4 @@ function App() {
   );
 }
 
-//render(<App />);
-
 export default App;

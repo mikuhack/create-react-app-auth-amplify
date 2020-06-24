@@ -1,6 +1,4 @@
 import React from "react";
-import logo from "../pic/logo.png";
-
 import { Navbar, Nav } from "react-bootstrap";
 import ModalQRCode from "./QRCode";
 
@@ -23,4 +21,5 @@ function Header() {
     </div>
   );
 }
+
 export default Header;

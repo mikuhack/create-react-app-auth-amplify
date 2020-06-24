@@ -17,8 +17,7 @@ function MessageList() {
     }
   };
   const [content, dispatch] = useReducer(reducer, init);
-
-  const messageList = content.messages.map(message => (
+  const messageList = content.messages.map((message) => (
     <Message
       key={message.id}
       icon={message.icon}
